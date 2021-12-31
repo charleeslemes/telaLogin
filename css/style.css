@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto;
+}
+
+html,body{
+    height: 100%;
+   
+}
+
+.clear{
+    clear: both;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    background-color: #4E5BEE ;
+}
+
+.login{
+    width: 40%;
+    float: left;
+    display: inline-block;
+   
+}
+
+.login .logo{
+    width: 180px;
+    height: 110px;
+    background-image: url('../images/logo.svg');
+    background-position: 100% 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    margin-bottom: 50px;
+   
+}
+
+.formulario{
+    margin-top: 20%;
+    float: left;
+    width: 100%;
+    text-align: center;
+   
+}
+
+form{
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  
+}
+
+form input[type=text]{
+    border:0;
+    width: 60%;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 10px;
+    border-radius: 20px;
+    background-color: #4E5BEE;
+    border: 1px solid white;
+    color: white;
+    margin-bottom: 15px;
+}
+form input[type=text]:focus{
+    outline: none;
+}
+
+form input[type=password]:focus{
+    outline: none;
+}
+
+form input[type=password]{
+    border:0;
+    width: 60%;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 10px;
+    border-radius: 20px;
+    background-color: #4E5BEE;
+    border: 1px solid white;
+    color: white;
+}
+
+
+form span{
+    color: white;
+}
+
+form .invalido{
+    color: #FF5757 ;
+   display: none;
+}
+
+
+
+form input[type=submit]{
+    margin-top:10px;
+    border-radius: 20px;
+    border:0;
+    width: 60%;
+    height: 32px;
+    cursor: pointer;
+    background-color: #F8F8F8;
+    color: #4E5BEE;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+
+.formulario p{
+    margin-top: 80px;
+    color: white;
+    font-size: 13px;
+}
+
+.formulario a{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+
+
+
+
+.banner{
+    width: 60%;
+    float: right;
+    background-color: #F8F8F8 ;
+}
+
+.banner .img-banner{
+    float: left;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/undraw_interview_rmcf.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+
+@media screen and (max-width: 800px){
+    .banner{
+        display: none;
+    }
+
+    .banner .img-banner{
+        display: none;
+    }
+
+    .login{
+        width: 100%;
+        float: none;
+        display: inline-block;
+       
+    }
+
+    .formulario{
+        margin-top: 10%;
+        float: none;
+        width: 100%;
+        text-align: center;
+       
+    }
+
+
+}
